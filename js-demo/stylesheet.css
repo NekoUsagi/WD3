@@ -1,0 +1,238 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+
+body{
+    background-image: url(img/photo-1496167117681-944f702be1f4.jpeg) ;
+    background-size: cover;
+    background-position: top;
+}
+
+
+/* slider */
+
+.fotorama {
+    margin: 20px 27% 0 27%;
+}
+
+
+
+/* aboutme */
+
+
+section{
+    background-color: white;
+    width: auto;
+    height: 300px;
+}
+
+.profile{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 15px 0 0 25%;
+}
+
+.about {
+    width: 430px;
+    font-size: 17px;
+    line-height: 36px;
+    display: inline-block;
+    margin: 0 0 0 120px;
+    font-family: 'Gayathri', sans-serif;
+    font-weight: 100;
+}
+h1 {
+    text-align: center;
+    margin: 0px;
+    padding: 20px 0 0 0;
+    font-size: 25px;
+    font-family: 'Gayathri', sans-serif, bold;
+}
+
+h2{
+    font-size: 25px;
+    font-family: 'Gayathri', sans-serif, bold;
+}
+
+h3 {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Gayathri', sans-serif, bold;
+}
+
+h4 {
+    font-family:'Gayathri', sans-serif, bold;
+}
+
+p {
+    font-family: 'Gayathri', sans-serif;
+    font-weight: 100;
+}
+
+/* gallery */
+.gallery img{
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    object-position: top;
+    display: inline-block;
+    margin:0 5px 5px 0px;
+    border-radius: 50%;
+}
+
+div{
+    text-align: center;
+}
+
+/* form */
+
+.contact-form{
+    background-color: white;
+    padding: 10px 0 10px 0;
+    position: relative;
+
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 800px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-family: 'Gayathri', sans-serif;
+}
+
+input{
+    width: 415px;
+    height: 18px;
+    margin: 15px 0 15px 0;
+}
+
+
+button{
+    height: 40px;
+    font-family: 'Gayathri', sans-serif, thin;
+    margin: 10px auto 10px 46%;
+}
+
+.contact {
+    width: auto;
+    text-align: center;
+    font-family: 'Gayathri', sans-serif;
+    font-weight: 100;
+    line-height: 30px;
+    padding: 0 25% 0px 25%;
+}
+
+
+
+/* media screen*/
+
+@media screen and (max-width:623px) and (min-width:300px){
+    .gallery img {
+        width: 100px;
+        height: 100px;
+    }
+
+
+
+    .profile{
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        margin: 0 36% 0 36%;
+    }
+
+    section {
+        width: auto;
+    }
+
+    .about {
+        font-size: 10px;
+        margin: 20px 15% 0 15%;
+        width: auto;
+        text-align: center;
+        line-height: 21px;
+    }
+
+
+    .contact{
+        font-size: 10px;
+        width: auto;
+        text-align: center;
+        padding: 0 10% 0px 10%;
+        line-height: 15px;
+    }
+
+
+
+
+
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: auto;
+        margin: auto;
+    }
+
+    input {
+        width: 100px;
+        margin: 15px 0px 15px 5px;
+    }
+
+    input .name {
+        margin: 15px 0px 15px 0px;
+    }
+
+    label {
+        text-align: center;
+        font-family: 'Gayathri', sans-serif;
+    }
+
+    textarea {
+        margin: 0 10px 0 10px;
+    }
+
+    button {
+        margin: 10px auto 10px 41%;
+    }
+}
+
+
+
+@media screen and (max-width:1024px) and (min-width:624px){
+    .gallery img {
+        width: 200px;
+        height: 200px;
+    }
+
+
+    section {
+        width: auto;
+        height: 350px;
+    }
+
+    .profile {
+        margin: 10px 40% 0 40%;
+    }    
+
+    .about {
+        margin: 10px 26% 0 26%;
+    }
+
+
+
+    .contact {
+        padding: 0 20% 0px 20%;
+    }
+
+}
