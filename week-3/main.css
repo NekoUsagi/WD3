@@ -8,9 +8,30 @@ img {
 }
 
 .navbar-brand {
-    width: 10%;
+    width: 5%;
+    margin: 0 0 4px 0;
+}
+
+.bg-light {
+    background-color: #55464f!important;
 }
 
 .table {
     margin: 0 0 8rem 0;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+.text-muted {
+    color: #d39854 !important;
+}
+
+.featurette-heading {
+    color: #725d47 !important;
+}
+
+th {
+    color: #725d47 !important;
 }
