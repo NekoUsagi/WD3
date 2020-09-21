@@ -2,3 +2,15 @@
     background-size: cover;
     background-position: center;
 }
+
+img {
+    width: 98%;
+}
+
+.navbar-brand {
+    width: 10%;
+}
+
+.table {
+    margin: 0 0 8rem 0;
+}
