@@ -1,3 +1,26 @@
 .jumbotron {
     background-size: cover;
 }
+
+p.lead {
+    width: 50%;
+    margin: 0%;
+}
+
+.led {
+    margin: 0 0 2% 0;
+}
+
+h2, h1 {
+    font-family: 'Nunito', sans-serif;
+    margin: 2% 0 2% 0;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    margin: 3% 8% 3% 8%;
+}
+
+.font-weight-bolder {
+    font-size: 20px;
+}
