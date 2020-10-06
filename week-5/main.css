@@ -1,0 +1,38 @@
+.navbar-brand {
+    padding: 0 50% 0 45%;
+    font-size: 28px;
+}
+
+.form-control.is-invalid, .was-validated .form-control:invalid {
+    border-color: #9835dc;
+    background-image: url("https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/453/2016/08/08175048/exclamation-1024x1018.png");
+}
+
+.form-control.is-valid, .was-validated .form-control:valid {
+    border-color:#2db6b6;
+    background-image: url("https://tse2.mm.bing.net/th?id=OIP.aq5bPgAXJAFk0tS4_WSJ_wAAAA&pid=Api&P=0&w=186&h=177");
+}
+
+
+.invalid-feedback {
+    color: #9835dc;
+}
+
+.custom-select.is-invalid, .was-validated .custom-select:invalid{
+    border-color: #9835dc;
+    background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right .75rem center/8px 10px,url("https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/453/2016/08/08175048/exclamation-1024x1018.png") #fff no-repeat center right 1.75rem/calc(.75em + .375rem) calc(.75em + .375rem)
+
+}
+
+.custom-control-input.is-valid~.custom-control-label, .was-validated .custom-control-input:valid~.custom-control-label {
+    color: #2db6b6;
+}
+
+.btn-primary {
+    background-color: #2db6b6;
+    border-color: #2db6b6;
+}
+
+h4 {
+    width: 100%;
+}
