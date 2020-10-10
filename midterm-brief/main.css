@@ -1,0 +1,19 @@
+.about-jumbotron {
+    background-size: cover;
+    background-position: center;
+}
+
+.about-img {
+    width: 500px;
+    height: 350px;
+}
+
+.service-jumbotron {
+    background-size: cover;
+    background-position: center;
+}
+
+.team-jumbotron {
+    background-size: cover;
+    background-position: center;
+}
