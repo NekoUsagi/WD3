@@ -1,11 +1,17 @@
+body {
+    background-image: url(img/ross-parmly-copy.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
 .about-jumbotron {
     background-size: cover;
     background-position: center;
 }
 
 .about-img {
-    width: 500px;
-    height: 350px;
+    width: 340px;
+    height: 240px;
 }
 
 .service-jumbotron {
@@ -35,35 +41,19 @@ p{
     margin: 0px;
 }
 
-.btn-info {
-    width: 10%;
-    margin: 3% 45% 3% 45%;
-}
-
-@media screen and (max-width:425px){
-    img {
-        height: 300px;
-        width: auto;
-    }
-}
-
-.team {
-    margin: auto
-}
-
-.col-lg-4 {
-    text-align: center;
+.index-img {
+    width: 100%;
+    height: 50%;
+    border-radius: 50%;
 }
 
 
-@media screen and (max-width:768px){
-    .team {
-        margin: 0%;
-    }
+
+@media screen and (min-width:768px){
 
     img {
         width: auto;
-        height: 250px;
+        height: auto;
     }
 
     .about-img {
@@ -71,21 +61,38 @@ p{
         height: 220px;
         margin-top: 90px;
     }
+
+    .index-img {
+        width: 35%;
+    }
 }
 
-@media screen and (max-width:1024px){
-    .team {
-        margin: auto;
-        padding: 0 90px 0 90px;
+
+@media screen and (min-width:992px){
+    .index-img {
+        width: 100%;
+        height: auto;
     }
+
+    .about-img {
+        margin-top: 0%;
+    }
+}
+
+@media screen and (min-width:1200px) {
 
     img {
         width: auto;
-        height: 250px;
     }
 
     .about-img {
         width: 300px;
         height: 220px;
+        margin-top: 10px;
     }
+}
+
+.team-img {
+    width: auto;
+    height: 260px;
 }
