@@ -16,27 +16,24 @@
 </head>
 
 <body>
-     <!-- navbar start -->
-     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top ">
-      <a class="navbar-brand font-weight-bold" style="margin-left: 26%; font-size: 1.75rem;" href="main.html">Flightdeck</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top ">
+      <a class="navbar-brand font-weight-bold mx-auto" style="font-size: 1.75rem; color: #333;"
+          href="main.html">Flightdeck</a>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 18%;">
-          <ul class="navbar-nav mr-auto ">
+      <div class="navbar mt-n1 mx-auto" id="navbarSupportedContent" style="padding:0px;">
+          <ul class="navbar-nav mr-auto flex-row ml-4">
               <li class="nav-item">
-                  <a class="nav-link font-weight-bold" href="index.html">Home</a>
+                  <a class="nav-link font-weight-bold mr-3" style="color: #333;" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link font-weight-bold" href="about.html">About</a>
+                  <a class="nav-link font-weight-bold mr-3" style="color: #333;" href="about.html">About</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link font-weight-bold" href="service.html">Service</a>
+                  <a class="nav-link font-weight-bold mr-3" style="color: #333;" href="service.html">Service</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link font-weight-bold" href="team.html">Team</a>
+                  <a class="nav-link font-weight-bold mr-3" style="color: #333;" href="team.html">Team</a>
               </li>
           </ul>
       </div>
@@ -85,50 +82,77 @@
 
 
 
-  
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Sign up for our Newsletter!</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form class="needs-validation" id="myForm">
-            <div class="form-group">
-              <div class="form-group">
-                <label for="exampleInputPassword1">Name</label>
-                <input type="text" class="form-control" id="name1">
-                <div class="invalid-feedback">Please Enter Your Name</div>
-                <div class="valid-feedback">Looks Good!</div>
-              </div>
 
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-              
-              <div class="invalid-feedback">Please Enter Email Address</div>
-              <div class="valid-feedback">Looks Good!</div>
-            </div>
-            <div class="form-group form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me for Newsletter</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+  <!-- form starts -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col">
+        <h3>Book an Apointment to Try Our Simulation!</h3>
+        <form class="need-validation" id="myForm">
 
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
+          <label>Your Name</label>
+          <div class="form-group form-row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last">
+            </div>
+            <div class="invalid-feedback">
+              Please enter your name
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <div class="invalid-feedback">
+              Please provide us a proper email
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Party</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <div class="custom-control custom-checkbox">
+             <input type="checkbox" class="custom-control-input" id="customCheck1">
+             <label class="custom-control-label" for="customCheck1">Please check this if you and your party is over 18</label>
+          </div>
+          <div class="invalid-feedback">
+            You must be over 18 to use our Simulation
+          </div>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlSelect2">Pick a Date To See Us</label>
+            <select class="custom-select">
+              <option selected>Choose a Date</option>
+              <option value="1">10/21</option>
+              <option value="2">10/31</option>
+              <option value="3">11/15</option>
+              <option value="3">11/21</option>
+            </select>
+          </div>
+
+          <button class="btn btn-light mb-3" type="submit">Book Appointment</button>
+        </form>
+
       </div>
     </div>
   </div>
 
-  <!-- modal end -->
+  <!-- form end -->
+
+
+
 
 
       <!-- Optional JavaScript -->
@@ -143,11 +167,18 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
 
-
-
 <script>
-  $('#exampleModal').modal('show')
+  let form = document.getElementById('myForm');
+  form.addEventListener("submit", function (event) {
+      if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+      }
+
+      form.classList.add('was-validated');
+  })
 </script>
+
 
 </body>
 
