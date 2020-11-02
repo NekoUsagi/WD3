@@ -1,0 +1,35 @@
+img {
+    width: 300px;
+}
+
+.scale:hover {
+    transform: scale(1.1,1.1);
+}
+
+.rotate:hover {
+    transform: rotate(20deg);
+}
+
+.nav-link:hover {
+    background-color: whitesmoke;
+}
+
+.navbar-brand:hover {
+    background-color: whitesmoke;
+}
+
+body {
+    background: rgb(255,205,237);
+    background: linear-gradient(90deg, rgba(255,205,237,1) 0%, rgba(255,255,255,1) 7%, rgba(255,255,255,1) 94%, rgba(136,255,249,1) 100%);
+    background-size: cover;
+}
+
+.bg-light {
+    background: rgb(255,205,237);
+background: linear-gradient(90deg, rgba(255,205,237,1) 0%, rgba(255,255,255,1) 50%, rgba(136,255,249,1) 100%);
+}
+
+.btn-outline-success {
+    color:#f1c6e0;
+    border-color:#f1c6e0;
+}
