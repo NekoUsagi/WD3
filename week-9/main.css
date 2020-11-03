@@ -11,11 +11,12 @@ img {
 }
 
 .nav-link:hover {
-    background-color: whitesmoke;
+    transform: scale(1.1,1.1);
+    text-decoration: underline;
 }
 
 .navbar-brand:hover {
-    background-color: whitesmoke;
+    transform: scale(1.1,1.1);
 }
 
 body {
