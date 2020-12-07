@@ -1,0 +1,38 @@
+body {
+    background-color: #1d1c1b;
+}
+
+
+/* main-page */
+.card {
+    margin: 50px 0 50px 0;
+}
+
+.bg-primary {
+    background-color: #444243 !important;
+}
+
+.featurette {
+    background-color: #444243;
+}
+/* main-page */
+
+
+
+/* checkout-page */
+label {
+    color: white;
+}
+
+h4 {
+    color: white;
+    margin: 50px 0 50px 0;
+}
+
+/* checkout-page */
+
+
+
+
+/* product-page */
+/* product-page */
