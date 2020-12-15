@@ -50,7 +50,7 @@
             <a class="nav-link text-light" href="contact.html">Contact<span class="sr-only">(current)</span></a>
           </li>
             <li class="nav-item">
-                <a class="nav-link text-light" data-toggle="modal" data-target="#exampleModal" href="cart.html"><i class="fas fa-shopping-cart"></i><span class="cartItems">1</span></a>
+                <a class="nav-link text-light cart-nav" data-toggle="modal" data-target="#exampleModal" href="cart.html"><i class="fas fa-shopping-cart"></i><span class="cartItems" id="span">0</span></a>
             </li>
         </ul>
     </div>
@@ -95,7 +95,7 @@
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">$15</p>
-              <button class="btn btn-dark btn-block hvr-outline-in" type="button">Add to Cart</button>
+              <button class="btn btn-dark btn-block hvr-outline-in cart-btn" type="button" id="btn" onclick="cot()">Add to Cart</button>
           </div>
         </div>
         <div class="card text-center">
@@ -105,7 +105,7 @@
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">$15</p>
-            <button class="btn btn-dark btn-block hvr-outline-in" type="button">Add to Cart</button>
+            <button class="btn btn-dark btn-block hvr-outline-in" type="button" id="btn" onclick="cot()">Add to Cart</button>
           </div>
         </div>
         <div class="card text-center">
@@ -115,7 +115,7 @@
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">$15</p>
-              <button class="btn btn-dark btn-block hvr-outline-in" type="button">Add to Cart</button>
+              <button class="btn btn-dark btn-block hvr-outline-in" type="button"id="btn" onclick="cot()">Add to Cart</button>
           </div>
         </div>
       </div>
@@ -139,7 +139,7 @@
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">$15</p>
-              <button class="btn btn-dark btn-block hvr-outline-in" type="button">Add to Cart</button>
+              <button class="btn btn-dark btn-block hvr-outline-in" type="button"id="btn" onclick="cot()">Add to Cart</button>
           </div>
         </div>
         <div class="card text-center">
@@ -149,7 +149,7 @@
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">$15</p>
-            <button class="btn btn-dark btn-block hvr-outline-in" type="button">Add to Cart</button>
+            <button class="btn btn-dark btn-block hvr-outline-in" type="button"id="btn" onclick="cot()">Add to Cart</button>
           </div>
         </div>
         <div class="card text-center">
@@ -159,7 +159,7 @@
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">$15</p>
-              <button class="btn btn-dark btn-block hvr-outline-in" type="button">Add to Cart</button>
+              <button class="btn btn-dark btn-block hvr-outline-in" type="button"id="btn" onclick="cot()">Add to Cart</button>
           </div>
         </div>
       </div>
@@ -184,7 +184,7 @@
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">$15</p>
-              <button class="btn btn-dark btn-block hvr-outline-in" type="button">Add to Cart</button>
+              <button class="btn btn-dark btn-block hvr-outline-in" type="button"id="btn" onclick="cot()">Add to Cart</button>
           </div>
         </div>
         <div class="card text-center">
@@ -194,7 +194,7 @@
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">$15</p>
-            <button class="btn btn-dark btn-block hvr-outline-in"  type="button">Add to Cart</button>
+            <button class="btn btn-dark btn-block hvr-outline-in"  type="button"id="btn" onclick="cot()">Add to Cart</button>
           </div>
         </div>
         <div class="card text-center">
@@ -204,7 +204,7 @@
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">$15</p>
-              <button class="btn btn-dark btn-block hvr-outline-in" type="button">Add to Cart</button>
+              <button class="btn btn-dark btn-block hvr-outline-in" type="button"id="btn" onclick="cot()">Add to Cart</button>
           </div>
         </div>
       </div>
@@ -237,6 +237,22 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
 </script>
+
+
+
+<script type="text/javascript">
+  var btn = document.getElementById('btn');
+    var spn = document.getElementById('span');
+  let count=0;
+  function cot(){
+    count+=1;
+    document.getElementById('span').innerHTML=count;
+    console.log(count);
+  }
+
+</script>
+
+
 
 
 </body>
