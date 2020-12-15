@@ -18,85 +18,156 @@
     <!-- font-family: 'Megrim', cursive;
     font-family: 'Raleway', sans-serif; -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
     <title>Final</title>
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="main.html">Coesmetics</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+        <a class="navbar-brand text-light" href="main.html">Coesmetics</a>
+        <button class="navbar-toggler text-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
+    
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Products
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="product.html">Foundation</a>
+                        <a class="dropdown-item" href="product2.html">Foundation</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="product.html">Eye Makeup</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="product.html">Lips</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="product.html">Makeup Tools</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="product.html">MAkeup Removers</a>
+                        <a class="dropdown-item" href="product3.html">Lips</a>
                     </div>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="blog.html">Blog<span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-light" href="blog.html">Blog<span class="sr-only">(current)</span></a>
                 </li>
+                <a class="nav-link text-light" href="contact.html">Contact<span class="sr-only">(current)</span></a>
+              </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    <a class="nav-link text-light" data-toggle="modal" data-target="#exampleModal" href="cart.html"><i class="fas fa-shopping-cart"></i><span class="cartItems">0</span></a>
                 </li>
             </ul>
         </div>
     </nav>
+    
 
 
 
-
-    <div class="jumbotron">
-        <h1 class="display-4">Hello, world!</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-      </div>
-
-
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-      </div>
-    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <table class="show-cart table"><tr><td>Makeup1</td><td>(15)</td><td><div class="input-group"><button class="minus-item input-group-addon btn pm-btn" data-name="Hat2">-</button><input type="number" class="item-count form-control" data-name="Hat2" value="1"><button class="plus-item btn input-group-addon pm-btn" data-name="Hat2">+</button></div></td><td><button class="delete-item btn del-btn" data-name="Hat2">X</button></td><td>15.00</td></tr></table>
+            </div>
+            <div class="text-right pr-1 pr-md-3 pr-lg-5">Total price: $ <span class="total-cart">15</span></div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" href="checkout.html">Checkout</button>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
+      </div>
+
+
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Our Story</h1>
+        </div>
+      </div>
+
+ <div class="container">
+      <div class="row row-cols-1 row-cols-md-2">
+        <div class="col mb-4">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1531751519425-e1fa9110434b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Our Character</h5>
+              <p class="card-text">We all want quality products</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1563391500723-45ce9664ddd6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">What we offer for the community</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1591375275088-c37c83d2472d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1435&q=80" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Our Goals</h5>
+              <p class="card-text">We all want quality products</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1588959571136-ad4bf0e50e34?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1100&q=80" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">We all want quality products</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+ </div>
+
+
+
+      <div class="container">
+          <div class="row">
+              <div class="col">
+                <iframe width="530" height="315" src="https://www.youtube.com/embed/o4go-j6G9JM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                <iframe width="530" height="315" src="https://www.youtube.com/embed/8lJa4c5MILk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+          </div>
+      </div>
 
 
     <!-- more links, social media icons, sign up news letter area, etc.  -->
-    <footer>
-        
-    </footer>
 
     
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+</script>
+
+<footer>
+    <p class="text-light">Sign up for our newsletter!</p>
+    <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Email" aria-label="Email">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign Up</button>
+      </form>
+      <ul>
+          <li class="icon text-white"><i class="fab fa-twitter"></i></li>
+          <li class="icon text-white"><i class="fab fa-facebook-square"></i></li>
+          <li class="icon text-white" ><i class="fab fa-instagram"></i></li>
+      </ul>
+
+</footer>
 </body>
 </html>
