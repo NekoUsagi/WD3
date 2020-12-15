@@ -142,3 +142,44 @@ h4 {
     margin-top: 30px;
     width: 100%;
 }
+
+
+@media screen and (max-width:425px){
+    .carousel-item {
+        height: auto;
+    }
+
+    .newsletter {
+        width: auto;
+    }
+
+    .nav-btn {
+        border-color: white;
+        background-color: white;
+    }
+}
+
+
+@media screen and (max-width:768px){
+    .nav-btn {
+        border-color: white;
+        background-color: white;
+    }
+
+    .carousel-caption1 {
+        width: 400px;
+        height: 400px;
+    }
+    
+    .carousel-caption2 {
+        width: 400px;
+        height: 300px;
+        margin:0 0 50px -60px;
+    }
+    
+    .carousel-caption3 {
+        width: 400px;
+        height: 300px;
+        margin:0 0 50px -60px;
+    }
+}
